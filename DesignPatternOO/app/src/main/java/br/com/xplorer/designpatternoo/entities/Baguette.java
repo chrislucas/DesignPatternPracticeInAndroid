@@ -7,4 +7,27 @@ import br.com.xplorer.designpatternoo.factory.Bread;
  */
 
 public class Baguette implements Bread {
+
+
+    @Type private int type;
+
+    public Baguette(@Type int type) {
+        this.type = type;
+    }
+
+
+    @Override
+    public int getType() {
+        return type;
+    }
+
+    @Override
+    public String getDescription() {
+        return null;
+    }
+
+    @Override
+    public long getCalories() {
+        return 0;
+    }
 }
